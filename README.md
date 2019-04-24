@@ -13,8 +13,9 @@ $ nom run serve (on terminal inside root client folder)
 
 ### Deploy (BETA Version, some bugs still exist)
 ```sh
-Server: xxx
-Client: xxx
+Server: http://35.198.251.76
+Client: http://hacktivoverflow.williamsuryawan.com.s3-website-ap-southeast-1.amazonaws.com/
+Client ALIAS CNAME: http://hacktivoverflow.williamsuryawan.com
 ```
 
 ### **User Routing**

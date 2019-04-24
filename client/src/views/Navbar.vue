@@ -65,7 +65,7 @@ export default {
         })
       },
       showAllArticle() {
-        this.$router.push(`/questions/`)
+        this.$router.push(`/create/`)
         // this.$store.dispatch('getAllQuestions')
         this.$store.commit('updateAllQuestionsState', {boolean: true})
         this.$store.commit('updateQuestionsDetailState', {boolean: false})
