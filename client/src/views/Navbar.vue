@@ -14,7 +14,7 @@
                     <a class="nav-item nav-link" href="#" v-if="isLogin" @click.prevent="logOut" style="color:black">Logout </a>
                 </div>
             </div>
-            <router-link to="/questions/create"><button class="btn btn-outline-success my-2 my-sm-0 mr-3" v-if="isLogin"> Ask Question</button></router-link>
+            <router-link to="/create"><button class="btn btn-outline-success my-2 my-sm-0 mr-3" v-if="isLogin"> Ask Question</button></router-link>
         </nav>
     </div>
 </template>
@@ -65,7 +65,7 @@ export default {
         })
       },
       showAllArticle() {
-        this.$router.push(`/create/`)
+        this.$router.push(`/questions/`)
         // this.$store.dispatch('getAllQuestions')
         this.$store.commit('updateAllQuestionsState', {boolean: true})
         this.$store.commit('updateQuestionsDetailState', {boolean: false})
